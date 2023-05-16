@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tiposdementes">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TiposDeMentes"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".MisTest"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Estadistica"
+            android:exported="true"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".AcercaDe"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Results"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Perfil"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Contacto"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MenuPrincipal"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Register"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Preguntas"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IntroSlider"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

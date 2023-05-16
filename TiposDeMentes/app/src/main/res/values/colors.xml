@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#9b53d3</color>
+    <color name="teal_700">#af69cd</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color_launch">#E3E36F</color>
+    <color name="morado_app">#af69cd</color>
+    //colores inactivos de dots
+    <color name="dark_one">#dcdcdc</color>
+
+    //colores activos de dots
+    <color name="orange_one">#9B53D3</color>
+    
+    <array name="active">
+        <item>@color/orange_one</item>
+        <item>@color/orange_one</item>
+        <item>@color/orange_one</item>
+    </array>
+
+    <array name="inactive">
+        <item>@color/dark_one</item>
+        <item>@color/dark_one</item>
+        <item>@color/dark_one</item>
+    </array>
+
+</resources>

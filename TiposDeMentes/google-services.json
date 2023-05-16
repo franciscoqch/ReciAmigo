@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "518629797458",
+    "project_id": "tiposdemente",
+    "storage_bucket": "tiposdemente.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:518629797458:android:e6a900030ff7c89c6f398b",
+        "android_client_info": {
+          "package_name": "com.example.tiposdementes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "518629797458-t5qh47v00p6ibeimue21044rukuendcn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5N448FUxHUrlVItv6bBLI9TlBHD8nhMU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "518629797458-t5qh47v00p6ibeimue21044rukuendcn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

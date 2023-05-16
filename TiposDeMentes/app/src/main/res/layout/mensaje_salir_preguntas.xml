@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativemsginternet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#65000000"
+    android:clickable="false">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/background_white_msg_account"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingStart="25dp"
+        android:paddingTop="22dp"
+        android:paddingEnd="25dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/tittleMsgScreen"
+            android:layout_width="261dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="22dp"
+            android:gravity="center"
+            android:text="Estas seguro de salir?"
+            android:textColor="@color/morado_app"
+            android:textStyle="bold"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/msg1Screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="23dp"
+            android:layout_marginEnd="23dp"
+            android:gravity="center"
+            android:text="Si sales ahora mismo perderas el progreso que llevas, vamos tu puedes!"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/noEntendidoMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#00000000"
+                android:stateListAnimator="@null"
+                android:text="Salir"
+                android:textAllCaps="false"
+                android:textColor="#FF0606"
+                android:textSize="17sp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/entendidoMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#00000000"
+                android:stateListAnimator="@null"
+                android:text="Continuar"
+                android:textAllCaps="false"
+                android:textColor="@color/morado_app"
+                android:textSize="17sp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

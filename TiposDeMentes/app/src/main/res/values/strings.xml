@@ -1,0 +1,193 @@
+<resources>
+    <string name="app_name">Trimente</string>
+    <string name="version">V.1.0</string>
+    <string name="nameversion">V.1.0</string>
+    <!-- Mentes -->
+    <string name="circulo">Circulo</string>
+    <string name="cuadrado">Cuadrado</string>
+    <string name="triangulo">Triangulo</string>
+    <string name="desproporcionado">Desproporcionado</string>
+    <!-- SharedPreferences -->
+    <string name="shdominante">dominante</string>
+    <string name="shsubdominante">subdominante</string>
+    <string name="shapoyo">apoyo</string>
+    <string name="shporcentajed">porcentajeD</string>
+    <string name="shporcentajes">porcentajeS</string>
+    <string name="shporcentajea">porcentajeA</string>
+    <string name="shnombrefile">MenteInformacion</string>
+    <string name="shporcentajedefault">0%</string>
+    <string name="shvalordefault">null</string>
+    <string name="shcodigo">codigo</string>
+    <string name="shnombre">nombres</string>
+    <string name="shcorreo">correo</string>
+    <string name="shcarrera">carrera</string>
+    <string name="shinstalada">PrimeraInstalacion</string>
+    <string name="shtrue">true</string>
+    <string name="shfalse">false</string>
+    <string name="shscore">puntajeD</string>
+    <string name="shpermisos">permisos</string>
+    <!-- Menu Principal - ruta-->
+    <string name="ruta">/shared_prefs/</string>
+    <!-- Menu Principal - XML-->
+    <string name="menutarget">Tu Tipo de Mente</string>
+    <string name="menuver">Ver</string>
+    <string name="menuinformacion">Ver Información</string>
+    <string name="menutest">Resolver Test</string>
+    <string name="menuperfil">Mi Perfil</string>
+    <string name="menuestadistica">Estadísticas</string>
+    <string name="menuacerca">Acerca De</string>
+    <string name="menucontacto">Contacto</string>
+    <string name="msgmenu">puedes seguir descubriendo tus potenciales.Nos quieres abandonar?</string>
+    <string name="menumente">Sin definir</string>
+    <!-- Colecciones Firebase-->
+    <string name="fbusers">Users</string>
+    <string name="fbtest">Test</string>
+    <string name="fbinfo">Informacion</string>
+    <string name="fbtestnombre">nombreuser</string>
+    <string name="fbtestcarrera">carrerauser</string>
+    <string name="fbtestcodigo">codigouser</string>
+    <string name="fbtestcorreo">correouser</string>
+    <string name="fbtestmentedominante">menteuser</string>
+    <string name="fbtestmentesubdominante">mentesubdominanteuser</string>
+    <string name="fbtestmenteapoyo">menteapoyouser</string>
+    <string name="fbtestporcentajed">porcentajedominante</string>
+    <string name="fbtestporcentajes">porcentajesubdominante</string>
+    <string name="fbtestporcentajea">porcentajeapoyo</string>
+    <string name="fbuserscodigo">Numero de Identidad</string>
+    <string name="fbusersnombre">Nombres</string>
+    <string name="fbuserspais">Pais</string>
+    <string name="fbusersuniversidad">Universidad</string>
+    <string name="fbusersidentidad">Identidad</string>
+    <string name="fbuserscarrera">Carrera</string>
+    <string name="fbuserscorreo">Correo</string>
+    <string name="fbusersedad">Edad</string>
+    <string name="fbusersestado">Estado</string>
+    <string name="fbusersmodelo">Modelo Cel</string>
+    <string name="fbusersfabricante">Fabricante Cel</string>
+    <string name="fbusershardware">Hardware Cel</string>
+    <string name="fbusershost">Host</string>
+    <string name="fbusersdisplay">Display</string>
+    <string name="fbusersserial">Serial</string>
+    <string name="fbusersuser">User</string>
+    <string name="fbuserdevice">Device</string>
+    <string name="fbusersip">Direccion IP</string>
+    <string name="fbusersfecha">Fecha</string>
+    <string name="fbuserestado">Estado</string>
+    <!-- Splash -->
+    <string name="nombreapp">Trifásico</string>
+    <!-- Login -->
+    <string name="login">login</string>
+    <string name="nocuenta">Si no tienes una cuenta</string>
+    <string name="register">Registrate!</string>
+    <string name="numdocumento">Numero de documento</string>
+    <!-- Toast  -->
+    <string name="usernoregis">Documento no registrado.</string>
+    <string name="userexiste">Ya existe un usuario con ese código</string>
+    <string name="useregistrado">Usuario Registrado</string>
+    <string name="usenoopcion">Selecciona una Opción</string>
+    <string name="permisos">Debes aceptar los permisos</string>
+    <string name="resultcompletos">Ya has mostrado todas tus respuestas</string>
+    <string name="permisosaceptados">Permisos Aceptados</string>
+    <!-- Register  -->
+    <string name="ingresecodigo">Ingrese un código.</string>
+    <string name="ingresecarrera">Ingrese una carrera.</string>
+    <string name="ingresenombre">Ingrese su nombre.</string>
+    <string name="ingresecorreo">Ingrese un correo.</string>
+    <string name="ingreseedad">Ingrese su edad.</string>
+    <string name="correoinvalido">Correo Invalido.</string>
+    <string name="tituloregistro">Área de registro</string>
+    <string name="btnregister">Registrarme</string>
+    <string name="spinnertd">Td</string>
+    <string name="spinnerpais">Seleccione un pais</string>
+    <string name="spinneruni">Seleccione una universidad</string>
+    <string name="spinnercarrera">Seleccione una carrera</string>
+    <string name="ingreseedad2">Edad</string>
+    <string name="registertelefono">telefono</string>
+    <!-- Introslider -->
+    <string name="itsiguiente">Siguiente</string>
+    <string name="urlinformacion">http://estadisticando.blogspot.com/2020/06/test-revelador-del-cociente-tricerebral.html</string>
+    <string name="intro1titulo">Test waldemar de gregory</string>
+    <string name="intro1descripcion">Waldemar de Gregory, diseñó y validó el RCMT, como una prueba para diagnosticar las manifestaciones del cerebro triuno, frente al entorno familiar, social. Institucional, laboral y ecológico.</string>
+    <string name="intro2titulo">Como realizar el test</string>
+    <string name="intro2descripcion">Para realizar o responder a las preguntas que aparecerán en pantalla debe colocar o seleccionar 1,2,3,4,5 siendo 1 que está en desacuerdo con la preguntada, 2 que está algo en desacuerdo, 3 que no está de acuerdo ni en desacuerdo, 4 que está algo de acuerdo, 5 está completamente de acuerdo.</string>
+    <string name="intro3titulo">Regístrese por favor.</string>
+    <string name="intro3descripcion">Esta aplicación usted podrá saber el tipo de mente que posee, pero si quiere ayudar a llevar un registro del tipo de mente que predomina actualmente, por favor regístrese a continución, en caso de que no desee no habrá ningún problema podrá realizar el test normalmente.</string>
+    <!-- Preguntas xml -->
+    <string name="titulopreguntas">Sección de preguntas</string>
+    <string name="cardpreguntas">Pregunta 1/27</string>
+    <string name="cardpregunta">Pregunta</string>
+    <string name="respuesta1">Uno</string>
+    <string name="respuesta2">Dos</string>
+    <string name="respuesta3">Tres</string>
+    <string name="respuesta4">Cuatro</string>
+    <string name="respuesta5">Cinco</string>
+    <!-- Result adapatador -->
+    <string name="descripcioncirculo">Cerebro Derecho Dominante (D):Persona sensible, afectuosa, creativa y soñadora</string>
+    <string name="descripcioncuadrado">Cerebro Izquierdo Dominante (I):Persona pensadora e intelectual</string>
+    <string name="descripciontriangulo">Cerebro Central Dominante (C):Persona práctica, organizada, con éxito en el trabajo, en los negocios; es líder en acción.</string>
+    <string name="tecnicacirculo">Operativo - Instintivo - tu fuerte es la parte derecha del cerebro.</string>
+    <string name="tecnicacuadrado">Logíco - Matemático - tu fuerte es la parte izquierda del cerebro.</string>
+    <string name="tecnicatriangulo">Emotivo - Creativo - tu fuerte es la parte central del cerebro.</string>
+    <string name="tecnicadesproporcionado">Tu mente es desproporcional en el Test De Waldemar De GREGORI, la diferencia de puntos entre tus mentes es mayor a 7 por lo tanto, no están muy bien definidos tus zonas cerebrales.</string>
+    <string name="escala1">9 – 27</string>
+    <string name="escala2">28 – 35</string>
+    <string name="escala3">36 – 44</string>
+    <string name="escala4">45</string>
+    <string name="escala1descrip">Débil, subdesarrollado, Atrofia de una excepcionalidad</string>
+    <string name="escala2descrip">Bueno o Normal</string>
+    <string name="escala3descrip">Fuerte, excelente, Superdotado, de excepcionalidad positiva.</string>
+    <string name="escala4descrip">Genio</string>
+    <string name="mensajesub1">Cerebro Central Subdominante (DCI): Persona sensible, práctica, sueña, pero tiene los pies sobre la tierra</string>
+    <string name="mensajesub2">Cerebro Izquierdo Subdominante (DCI): Persona que está lejos de la realidad, tiene mucha cultura racional y humanista, pero no empresarial o comercial, Debe ser poeta, místico o filósofo.</string>
+    <string name="mensajesub3">Cerebro Central Subdominante (ICD): Persona que actúa conscientemente y razona en función de la sobrevivencia.</string>
+    <string name="mensajesub4">Cerebro Central Subdominante (ICD): Persona Teórica y distraída.</string>
+    <string name="mensajesub5">Cerebro Izquierdo Subdominante (CID): Persona líder y calculadora.</string>
+    <string name="mensajesub6">Cerebro Derecho Subdominante (CDI): Persona líder, humanista, populista, emocional.</string>
+    <!-- Result xml -->
+    <string name="targetdefault">60%</string>
+    <string name="titulotarget2">Análisis según tu Puntaje</string>
+    <string name="defaultdescripcion">Hola, felicitaciones obtuviste un puntaje, tu mente dominante es el Círculo, eres una persona con las siguientes características.</string>
+    <string name="defaulttecnico">Lógico - Matemático - tu fuerte es la parte izquierda del cerebro.</string>
+    <string name="defaulpuntaje">Puntaje</string>
+    <string name="defaulobservacion">Observación</string>
+    <string name="titulotarget3">Análisis Según Tu Zona Cerebral</string>
+    <string name="subtitulodominante">Mente Dominante</string>
+    <string name="descripciondefault2">Cerebro Derecho Dominante (D):Persona sensible, afectuosa, creativa y soñadora</string>
+    <string name="unionsubdominante">Unión del Subdominante y Apoyo</string>
+    <string name="descripcionunion">Cerebro Derecho Dominante (D):Persona sensible, afectuosa, creativa y soñadora</string>
+    <string name="btnresult">Continuar</string>
+    <!-- Perfil xml -->
+    <string name="nombreperfilde">Armando Pineda Paredes</string>
+    <string name="correoperfilde">armandojosepineda26@gmail.com</string>
+    <string name="carreraperfilde">Ingenieria de sistemas - 191697</string>
+    <string name="targettest">Mis Test</string>
+    <string name="targetborrar">Eliminar datos y cuenta</string>
+    <string name="perfilproximamente">Próximamente</string>
+    <string name="targetconfiguracion">Configuración</string>
+    <string name="tituloalertborrar">Alerta - Borrado de cuenta</string>
+    <string name="confirmacionalertborrar">Estás seguro de eliminar tu cuenta y datos?</string>
+    <!-- Acercade xml -->
+    <string name="tituloacercade">Acerca De Trifásico</string>
+    <string name="descripcionacercade">Trifacico es una aplicación que busca ayudar a encontrar el tipo de mente que posee una persona, basándose en el test de waldemar de gregory.\nLa aplicación usa las 27 preguntas propuestas por gregory para determinar el porcentaje del tipo de mente que se posee, ya sea cuadrada, triangular o circular.\nPara saber más sobre el test puede ingresar a la sección de ver infomación que se encuentra en el menú.</string>
+    <string name="btnvolveracercade">Volver</string>
+    <!-- Contacto -->
+    <string name="tituloalert">Alerta - envio correo</string>
+    <string name="mensajealert">Algunos campos están vacíos, ¿quieres enviar el correo?</string>
+    <string name="confirmacionalert">Estás seguro de enviar el correo?</string>
+    <string name="btnaceptar">Aceptar</string>
+    <string name="btncancelar">Cancelar</string>
+    <string name="correodestino">ajpinedap@ufpso.edu.co</string>
+    <!-- Contacto xml -->
+    <string name="titulocontacto">Área de contacto</string>
+    <string name="descripcioncontacto">Si posees alguna duda respecto al uso de la aplicación, o si encuentras algún error no dudes en contactarnos.</string>
+    <string name="mensaje">Mensaje</string>
+    <string name="asunto">Asunto</string>
+    <string name="enviar">Enviar</string>
+    <!-- estadistica xml -->
+    <string name="subtituloesta">Ultimos Test Realizados</string>
+    <string name="tituloesta">Mentes Mas Comunes Entre los Usuarios</string>
+    <string name="titulocircular">Circular</string>
+    <string name="titulotriangular">Triangular</string>
+    <string name="targetmente">Tipo de Mente:</string>
+    <string name="cargando">Cargando...</string>
+</resources>

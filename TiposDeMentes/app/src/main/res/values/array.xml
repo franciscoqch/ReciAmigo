@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--   preguntas para adultos -->
+    <string-array
+        name="array_adultos">
+        <item>Al final del dia, de la semana o de una actividad, ¿haces revisión y evaluación?</item> //1 cuadrado
+        <item>En tu casa, en tu habitación, en tu lugar de trabajo, ¿hay orden?</item> //2 triangulo
+        <item>¿Crees que tu cuerpo, tu energía son parte de un todo mayor, de alguna fuerza superior, invisible, espiritual y eterna?</item> //3 circular
+        <item>¿Sabes contar chistes? ¿vives alegre,optimista y disfrutando a pesar de todo?</item> //4 circular
+        <item>Dialogando o discutiendo, ¿tienes buenas explicaciones, argumentos, sabes rebatir?</item> //5 cuadrado
+        <item>Tienes presentimientos, premoniciones, sueños nocturnos que se hacen realidad?</item> // 6 circular
+        <item>En la relación afectiva, ¿te comprometes a fondo con romanticismo y pasión?</item> // 7 circular
+        <item>¿Sabes hablar frente a un grupo, dominas las palabras con fluidez y corrección?</item> // 8 cuadrado
+        <item>Cuando hablas, ¿gesticulas, mueves el cuerpo,miras a todas las personas?</item> //9 circular
+        <item>¿Te puedes imaginar en la ropa de otra persona ysentir cómo ella se siente?</item> //10 circular
+        <item>¿Sabes alinear los pro y los contra de un problema,logras discernirlos y emitir juicios correctos?</item> //11 cuadrado
+        <item>Cuando narras un hecho ¿le pones muchos detalles,te gusta dar todos los pormenores?</item> //12 cuadrado
+        <item>Al comprar o vender ¿te sale bien, sacas ventajas,ganas plata?</item> //13 triangulo
+        <item>¿Te gusta innovar, cambiar la rutina de la vida, delambiente, tienes soluciones creativas, originales?</item> //14 circular
+        <item>¿Controlas tus ímpetus y te detienes a tiempo parapensar en las consecuencias antes de actuar?</item>//15 cuadrado
+        <item>Antes de aceptar cualquier información como verdadera ¿te dedicas a recoger más datos y a averiguar las fuentes?</item> //16 cuadrado
+        <item>¿Qué consciencia y disciplina tienes de lo que comer y bebes, del descanso, del sueño y de los ejercicios fisicos</item> //17 triangulo
+        <item>Frente a una tarea difícil, ¿tienes capacidad de concentración, de continuidad, de aguante?</item> //18 triangulo
+        <item>En la posición de jefe, ¿sabes dividir tareas, calcular tiempo para cada una, dar instrucciones cortas, exigir la ejecución?</item> //19 triangulo
+        <item>¿Te detienes a ponerle atención a una puerta de sol, a un pájaro o a un paisaje?</item> //20 circular
+        <item>¿Te atraen las aventuras, tareas desconocidas, iniciar algo que nadie hizo antes?</item> //21 triangulo
+        <item>¿Te autorizas a dudar de las informaciones de la TV, de personas de la politica, de la religión o de la ciencia?</item> //22 cuadrado
+        <item>¿Logras trasnformar tus sueños e ideales en cosas concretas, realizaciones que progresan y duran?</item> //23 triangulo
+        <item>¿Tienes el hábito de pensar en el dia de mañana, en el año próximo o en los próximos 10 años?</item> //24 circulo
+        <item>¿Tienes facilidad con máquinas y aparatos como grabadoras, calculadoras, lavadoras, celulares, computadoras o autos?</item> //25 triangulo
+        <item>¿Eres rápido en lo que haces, te alcanza el tiempo más que el de tus colegas, terminas bien y a tiempo lo que empiezas?</item> //26 triangulo
+        <item>Cuando trabajas o te comunicas, ¿usas los números, estadísticas, porcentajes y matemáticas?</item> //27 cuadrado
+    </string-array>
+
+    <!--   preguntas para adolescentes -->
+    <string-array
+        name="array_adolescentes">
+        <item>¿Averiguo siempre los datos de un boleto, de una cuenta tan pronto la reciba?</item> //1 cuadrado
+        <item>¿En mi cuarto hay orden y me gusta mantener las cosas en su lugar?</item> //2 triangulo
+        <item>¿Creo que yo, que mi cuerpo, mi energia son parte de un todo mayor, de alguna fuerza superior, invisible y eterna?</item> //3 circular
+        <item>¿Ando alegre, soy optimista, tengo entusiasmo y risa fácil?</item> //4 circular
+        <item>En una discusión, ¿doy buenas explicaciones, tengo argumento y sé rebatir?</item> //5 cuadrado
+        <item>Frente a un problema, ¿suelo tener ideas brillantes o inspiración repentina?</item> // 6 circular
+        <item>Mis relaciones afectivas, ¿las llevo con romanticismo, con mucha pasión?</item> // 7 circular
+        <item>En comunicación, sé y tengo los suficiente para convencer a los demás</item> // 8 cuadrado
+        <item>Al hablar ¿miro a los ojos de las personas y me acompaño con gestos de la cabeza, las manos y el cuerpo?</item> //9 circular
+        <item>¿Soy capaz de ponerme en el lugar de otra persona, de imaginar la situación que ella vive y de sentirme como ella se siente?</item> //10 circular
+        <item>Frente a un problema ¿me acuerdo de hacer un listado de aspectos a favor y otro en contra para que mis decisiones sean más realistas?</item> //11 cuadrado
+        <item>Al informar sobre algo ¿lo hago con todos los detalles?</item> //12 cuadrado
+        <item>Cuando compro, intercambio o hago negocios ¿sé sacar ventaja?</item> //13 triangulo
+        <item>¿Me gusta salir de la rutina, hacer cambios en mi vida diaria, buscar maneras nuevas de hacer las cosas?</item> //14 circular
+        <item>¿Antes de lanzarme a algo, cuánto lo pienso? ¿Qué control tengo sobre mis impulsos? ¿Pienso en las consecuencias antes de hacer algo?</item>//15 cuadrado
+        <item>Antes de aceptar información de alguna noticia o ¿me pongo averiguar la fuente, a escuchar el otro lado para no formar opinión precipitadamente?</item> //16 cuadrado
+        <item>¿Qué consciencia y disciplina tengo de lo que como y bebo, del descanso y de los ejercicios físicos?</item> //17 triangulo
+        <item>¿Frente a una dificultad, tengo buena resistencia, puedo concentrarme y aguantar largo tiempo sin desistir?</item> //18 triangulo
+        <item>¿En la posición de jefe o líder sé dividir y distribuir tareas, determinar el tiempo para cada cosa y perdirle a las personas, los resultados?</item> //19 triangulo
+        <item>¿Me llama mucho la atención una puesta de sol, un pájaro cantando, una flor, un paisaje?</item> //20 circular
+        <item>¿Me tientan las aventuras, las tareas desconocidas o desafiantes?</item> //21 triangulo
+        <item>¿En qué grado me autorizo a criticar a las personas, criticar informaciones de TV, de política de religión y de la escuela?</item> //22 cuadrado
+        <item>¿En que grado logro transformar mis sueños e ideas en hechos, en cosas concretas que progresan y duran?</item> //23 triangulo
+        <item>¿Me dedico a imaginar lo que estará pasando conmigo, con los otros o con el mundo en unos 10, 20 o 50 años?</item> //24 circulo
+        <item>¿Qué agilidad tengo para lidiar con tecnología como la grabadora, la máquina de lavar, la calculadora, con un aparato de sonido y con los botones electronicos?</item> //25 triangulo
+        <item>Cuando empiezo a hacer una cosa ¿logro llevarla hasta el final, en el plazo acordado?</item> //26 triangulo
+        <item>Cuando hablo, además del vocabulario común y corriente ¿sé emplear números y estadísticas?</item> //27 cuadrado
+    </string-array>
+
+    <!--   preguntas para primer grado -->
+    <string-array
+        name="array_primergrado">
+        <item>Si veo o escucho algo ¿trato de observar bien, me preocupo por entenderlo bien?</item> //1 cuadrado
+        <item>¿Me gusta crear actividades y organizar al grupo para trabajar juntos?</item> //2 triangulo
+        <item>En cuanto a religión ¿tengo fe y sé rezar?</item> //3 circular
+        <item>¿Soy alegre, me gusta juguetear, hacer chistes, reírme?</item> //4 circular
+        <item>¿Sé discutir, defenderme con ideas y palabras, sin pelear?</item> //5 cuadrado
+        <item>¿Me sucede mucho que puedo adivinar lo que va a pasar?</item> // 6 circular
+        <item>¿Sé querer a la gente, y sé hacerme querer?</item> // 7 circular
+        <item>¿Me gusta hacer muchas preguntas?</item> // 8 cuadrado
+        <item>Cuando hablo ¿me acompaño con gestos del rostro, manos y cuerpo?</item> //9 circular
+        <item>¿Sé ponerme en la situación de otras personas y sentir lo que sienten ellas?</item> //10 circular
+        <item>¿Logro percibir pronto lo cierto y lo errado en mí, en mi casa y en el aula?</item> //11 cuadrado
+        <item>Cuando preguntan "qué pasó en el aula" ¿sé contarlo todo con muchos detalles?</item> //12 cuadrado
+        <item>En mis compras o intercambios ¿sé lograr ventajas?</item> //13 triangulo
+        <item>¿Me complace estar buscando maneras nuevas de hacer o arreglar las cosas?</item> //14 circular
+        <item>¿Pienso mucho antes de meterme a hacer algo?</item>//15 cuadrado
+        <item>¿Me gusta estudiar y aprender siempre?</item> //16 cuadrado
+        <item>¿Hago trabajos manuales bien hechos?</item> //17 triangulo
+        <item>¿Puedo prestarle atención al aula todo el tiempo?</item> //18 triangulo
+        <item>¿Organizo y cuido bien mis libros, mis juguetes, mis cosas?</item> //19 triangulo
+        <item>¿Me gusttvestime bien y arreglarme bien?</item> //20 circular
+        <item>¿Me esfuerzo bastante para vencer en las competencias o para ganarles a los otros?</item> //21 triangulo
+        <item>Cuando percibo algo errado, ¿soy capaz de apuntarlo, criticarlo, exigir la verdad?</item> //22 cuadrado
+        <item>Cuando quiero algo, ¿sé luchar hasta conseguirlo?</item> //23 triangulo
+        <item>¿Me dedico a pensar qué será de mi vida de aqui a 10 o 20 años?</item> //24 circulo
+        <item>¿Soy bueno con los videojuegos, con aparatos de sonido, con el control remoto?</item> //25 triangulo
+        <item>¿Me gusta estar ocupado, hacer cosas, ayudar en la casa?</item> //26 triangulo
+        <item>¿Me gusta sacar cuentas, guardar números de memoria, estudiar matemáticas?</item> //27 cuadrado
+    </string-array>
+
+    <!--   preguntas para menores de 10 anos -->
+    <string-array
+        name="array_menores10">
+        <item>Grado de curiosas, de antención y cantidad de lo que percibe</item> //1 cuadrado
+        <item>Cuánto de iniciativa tiene, cuánto organiza y moviliza a los demás</item> //2 triangulo
+        <item>Tiene respeto, sensibilidad con las plantas, animales y personas</item> //3 circular
+        <item>Le gusta jugar con los demás, sabe reír, tiene buen genio</item> //4 circular
+        <item>Cnatidad de vocabulario, comprensión de preguntas e instrucciones</item> //5 cuadrado
+        <item>Tiene buena imaginación y fantasia, consigue relajarse</item> // 6 circular
+        <item>Tiene amistade, sabe demostrar afecto y cariño</item> // 7 circular
+        <item>Pregunta y contesta pronto con voz, respiración y pronunciación adecuadas</item> // 8 cuadrado
+        <item>Tiene gesticulación coordinada, original, elegante y expresiva</item> //9 circular
+        <item>Sientee desmuestra compasión frente a la tristeza y al dolor de los demás</item> //10 circular
+        <item>Tiene capacidad para definir, pedir explicación y explicar lo que quiere</item> //11 cuadrado
+        <item>Puede narrar algo con detalles y con conexión lógica de ideas</item> //12 cuadrado
+        <item>Se preocupa por tener dinero, guardarlo, ser cuidadoso(a) en gastarlo</item> //13 triangulo
+        <item>¿En qué grado presenta creatividad y expresión artística?</item> //14 circular
+        <item>Anuncia lo que va a hacer, hacer análisis de sí mismo y de sus acciones</item>//15 cuadrado
+        <item>Le gustan los libros, la lectura, el estudio, las exposiciones, las oportunidades de aprendizaje</item> //16 cuadrado
+        <item>Esquema corporal, uso de manos, estado y desempeño de los cinco sentidos</item> //17 triangulo
+        <item>Tiempo de interés y esfuerzo dedicado a un juguete o a una tarea</item> //18 triangulo
+        <item>Sentido de propiedad, uso y organización de sus juguetes y objetos</item> //19 triangulo
+        <item>Percepción de su cuerpo como bello/feo, gusto por colores, música, teatro</item> //20 circular
+        <item>Grado de competitividad, deseo de conquista y recompensa</item> //21 triangulo
+        <item>Se sienete autorizado para discordar, para hacer crítica</item> //22 cuadrado
+        <item>Vitalidad y disposición para la acción, el hacer, ocuparse, gastar energia</item> //23 triangulo
+        <item>Grado de autoconfianza, altivez, auto-estima, espontaneidad</item> //24 circulo
+        <item>Grado de destreza con puertas, cerraduras, aparatos</item> //25 triangulo
+        <item>Sentido de tiempo, horarios, velocidad de ejecución de tareas</item> //26 triangulo
+        <item>Cacidad de números, clasificaciones, para interrelacionar cosas</item> //27 cuadrado
+    </string-array>
+
+    <string-array name="array_identificacion">
+        <item>Td</item>
+        <item>Ti</item>
+        <item>Cc</item>
+        <item>OTRO</item>
+    </string-array>
+    <string-array name="array_carreras">
+        <item>Seleccione una carrera</item>
+        <item>Ingenieria de Sistemas</item>
+        <item>Ingenieria Mecanica</item>
+        <item>Ingenieria Civil</item>
+        <item>Ingenieria Ambiental</item>
+        <item>Ingenieria Agroindustrial</item>
+        <item>Ingenieria Agronómica</item>
+        <item>Ingenieria Biotecnologica</item>
+        <item>Ingenieria de Minas</item>
+        <item>Ingenieria Electromecanica</item>
+        <item>Ingenieria Industrial</item>
+        <item>Administracion de empresas</item>
+        <item>Comunicación social</item>
+        <item>Contaduria pública</item>
+        <item>Derecho</item>
+        <item>Zootecnia</item>
+        <item>Diseño grafico</item>
+        <item>Administración financiera</item>
+        <item>Ad. turística y hotelera</item>
+        <item>Negocios internacionales</item>
+        <item>Negocios de la moda</item>
+        <item>Arquitectura</item>
+        <item>OTRA</item>
+    </string-array>
+
+    <string-array name="array_paises">
+        <item>Seleccione un pais</item>
+        <item>Argentina</item>
+        <item>Chile</item>
+        <item>Colombia</item>
+        <item>Costa Rica</item>
+        <item>Perú</item>
+        <item>Venezuela</item>
+        <item>Mexico</item>
+        <item>Uruguay</item>
+        <item>Brasil</item>
+        <item>Cuba</item>
+        <item>Ecuador</item>
+        <item>El Salvador</item>
+        <item>Guatemala</item>
+        <item>Honduras</item>
+        <item>Panama</item>
+        <item>Paraguay</item>
+        <item>OTRO</item>
+    </string-array>
+
+    <string-array name="array_universidades">
+        <item>Seleccione una universidad</item>
+        <item>Ufpso</item>
+        <item>Ufps</item>
+        <item>Los Andes</item>
+        <item>U. Nacional</item>
+        <item>U. Javeriana</item>
+        <item>Uis</item>
+        <item>OTRA</item>
+    </string-array>
+</resources>
