@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9B53D3"
+    android:background="#006400"
     tools:context=".MainActivity">
 
    <ImageView
@@ -18,13 +18,11 @@
        app:layout_constraintBottom_toBottomOf="parent">
 
    </ImageView>
-
      <TextView
-
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:text="@string/nombreapp"
-         android:textColor="@color/white"
+         android:textColor="#006400"
          android:textSize="30dp"
          android:fontFamily="cursive"
          android:textStyle="bold"

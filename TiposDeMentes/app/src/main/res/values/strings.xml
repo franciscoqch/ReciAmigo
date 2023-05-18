@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Trimente</string>
+    <string name="app_name">Reciclar</string>
     <string name="version">V.1.0</string>
     <string name="nameversion">V.1.0</string>
     <!-- Mentes -->
@@ -54,6 +54,7 @@
     <string name="fbtestporcentajes">porcentajesubdominante</string>
     <string name="fbtestporcentajea">porcentajeapoyo</string>
     <string name="fbuserscodigo">Numero de Identidad</string>
+    <string name="contrasena">Contrasena</string>
     <string name="fbusersnombre">Nombres</string>
     <string name="fbuserspais">Pais</string>
     <string name="fbusersuniversidad">Universidad</string>
@@ -82,6 +83,7 @@
     <string name="numdocumento">Numero de documento</string>
     <!-- Toast  -->
     <string name="usernoregis">Documento no registrado.</string>
+    <string name="usernoregistrado">Usuario no registrado.</string>
     <string name="userexiste">Ya existe un usuario con ese código</string>
     <string name="useregistrado">Usuario Registrado</string>
     <string name="usenoopcion">Selecciona una Opción</string>
@@ -105,12 +107,12 @@
     <string name="registertelefono">telefono</string>
     <!-- Introslider -->
     <string name="itsiguiente">Siguiente</string>
-    <string name="urlinformacion">http://estadisticando.blogspot.com/2020/06/test-revelador-del-cociente-tricerebral.html</string>
-    <string name="intro1titulo">Test waldemar de gregory</string>
+    <string name="urlinformacion">https://wordwall.net/es/resource/34154364/reciclar</string>
+    <string name="intro1titulo">TITULO 1</string>
     <string name="intro1descripcion">Waldemar de Gregory, diseñó y validó el RCMT, como una prueba para diagnosticar las manifestaciones del cerebro triuno, frente al entorno familiar, social. Institucional, laboral y ecológico.</string>
-    <string name="intro2titulo">Como realizar el test</string>
+    <string name="intro2titulo">TITULO 2</string>
     <string name="intro2descripcion">Para realizar o responder a las preguntas que aparecerán en pantalla debe colocar o seleccionar 1,2,3,4,5 siendo 1 que está en desacuerdo con la preguntada, 2 que está algo en desacuerdo, 3 que no está de acuerdo ni en desacuerdo, 4 que está algo de acuerdo, 5 está completamente de acuerdo.</string>
-    <string name="intro3titulo">Regístrese por favor.</string>
+    <string name="intro3titulo">TITULO 3.</string>
     <string name="intro3descripcion">Esta aplicación usted podrá saber el tipo de mente que posee, pero si quiere ayudar a llevar un registro del tipo de mente que predomina actualmente, por favor regístrese a continución, en caso de que no desee no habrá ningún problema podrá realizar el test normalmente.</string>
     <!-- Preguntas xml -->
     <string name="titulopreguntas">Sección de preguntas</string>

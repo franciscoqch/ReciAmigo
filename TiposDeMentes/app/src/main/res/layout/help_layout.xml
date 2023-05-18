@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/piso">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtBV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="La forma mas fácil de identificar esta categoría es colocar en el contenedor de basura todo residuo de alimento,."
+                    android:textColor="#CCC"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    app:srcCompat="@drawable/bverde" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/bazul" />
+
+                <TextView
+                    android:id="@+id/txtBAz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Para este tipo de basura identificamos el bote de color azul, en el podemos agregar cualquier residuo hecho por plástico."
+                    android:textColor="#CCC"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtBAm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="En el recipiente que se identifica de color amarillo se deposita todo residuo que puede reciclarse, es decir, residuos hechos de cartón, aluminio, vidrio."
+                    android:textColor="#CCC"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    app:srcCompat="@drawable/bamarillo" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    app:srcCompat="@drawable/bnegro" />
+
+                <TextView
+                    android:id="@+id/txtBN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="El recipiente negro es uno de los mas importantes al separar cualquier residuo que no se puede reutilizar en un futuro, por lo general estan hechos de unicel, envolturas, revistas y celofán."
+                    android:textColor="#CCC"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

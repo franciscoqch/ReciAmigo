@@ -25,17 +25,9 @@ public class MainActivity extends AppCompatActivity {
         img = findViewById(R.id.imagen);
         img.startAnimation(zoom);
 
-        SharedPreferences prefe = getSharedPreferences(getResources().getString(R.string.shnombrefile), Context.MODE_PRIVATE);
-        primerves = prefe.getString(getResources().getString(R.string.shinstalada), getResources().getString(R.string.shtrue));
-
         new Handler().postDelayed(() -> {
-            if (primerves.equals("") || primerves.equals(" ") || primerves.equals(getResources().getString(R.string.shvalordefault)) || primerves.equals(getResources().getString(R.string.shtrue))) {
                 Utils.intentTrans(IntroSlider.class, MainActivity.this);
                 finish();
-            } else if (primerves.equals(getResources().getString(R.string.shfalse))) {
-                Utils.intentTrans(LoginActivity.class, MainActivity.this);
-                finish();
-            }
         }, 3000);
     }
 

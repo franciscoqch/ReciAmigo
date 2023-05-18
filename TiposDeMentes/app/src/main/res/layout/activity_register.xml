@@ -4,12 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9B53D3"
+    android:background="#FFFFFF"
     tools:context=".Register">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/background_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/arrowBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="visible"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Zona de Registro"
+            android:textColor="#ffffff"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/tierra" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="fill|center"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
@@ -20,7 +67,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -34,7 +81,7 @@
                 android:fontFamily="cursive"
                 android:gravity="center"
                 android:text="@string/tituloregistro"
-                android:textColor="@color/morado_app"
+                android:textColor="@color/verdeApp"
                 android:textSize="35sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -63,13 +110,33 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <Spinner
-                            android:id="@+id/Ti_Cc"
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                             android:layout_width="0dp"
-                            android:layout_height="55dp"
-                            android:layout_marginStart="16dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/spinner_style" />
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_weight="3"
+                            android:drawablePadding="10dp"
+                            android:hint="Nombre de usuario"
+                            android:minHeight="48dp"
+                            app:startIconDrawable="@drawable/ic_seguridad">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etCodigo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:maxLength="10" />
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/campoContrasena"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
 
                         <com.google.android.material.textfield.TextInputLayout
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -79,123 +146,74 @@
                             android:layout_marginEnd="16dp"
                             android:layout_weight="3"
                             android:drawablePadding="10dp"
-                            android:hint="@string/fbuserscodigo"
+                            android:hint="Contrasena"
                             android:minHeight="48dp"
                             app:startIconDrawable="@drawable/ic_seguridad">
 
                             <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/etCodigo"
+                                android:id="@+id/etContrasena"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:inputType="number"
+                                android:inputType="text"
                                 android:maxLength="10" />
                         </com.google.android.material.textfield.TextInputLayout>
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/campoCiudad"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="30dp">
-
-                        <Spinner
-                            android:id="@+id/Pais"
-                            android:layout_width="0dp"
-                            android:layout_height="55dp"
-                            android:layout_marginStart="16dp"
-                            android:layout_weight="2"
-                            android:background="@drawable/spinner_style"
-                            android:hint="@string/fbuserspais" />
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
 
                         <com.google.android.material.textfield.TextInputLayout
                             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="4dp"
+                            android:layout_marginStart="5dp"
                             android:layout_marginEnd="16dp"
-                            android:layout_weight="1"
+                            android:layout_weight="3"
                             android:drawablePadding="10dp"
-                            android:hint="@string/ingreseedad2"
-                            android:minHeight="48dp">
+                            android:hint="Ciudad donde Recicla"
+                            android:minHeight="48dp"
+                            app:startIconDrawable="@drawable/ic_seguridad">
 
                             <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/etEdad"
+                                android:id="@+id/etCiudad"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:inputType="number"
-                                android:maxLength="2" />
+                                android:inputType="text"
+                                android:maxLength="10" />
                         </com.google.android.material.textfield.TextInputLayout>
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/campoEmpresa"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="30dp">
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
 
-                        <Spinner
-                            android:id="@+id/etCarrera"
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                             android:layout_width="0dp"
-                            android:layout_height="55dp"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginTop="6dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
                             android:layout_marginEnd="16dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/spinner_style" />
+                            android:layout_weight="3"
+                            android:drawablePadding="10dp"
+                            android:hint="Empresa Asociado"
+                            android:minHeight="48dp"
+                            app:startIconDrawable="@drawable/ic_seguridad">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etEmpresa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:maxLength="10" />
+                        </com.google.android.material.textfield.TextInputLayout>
                     </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="30dp">
-
-                        <Spinner
-                            android:id="@+id/uni"
-                            android:layout_width="0dp"
-                            android:layout_height="55dp"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginTop="6dp"
-                            android:layout_marginEnd="16dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/spinner_style" />
-                    </LinearLayout>
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="24dp"
-                        android:layout_marginEnd="16dp"
-                        android:drawablePadding="10dp"
-                        android:hint="@string/fbusersnombre"
-                        android:minHeight="48dp"
-                        app:startIconDrawable="@drawable/ic_nombre">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/etNombre"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:ems="10"
-                            android:inputType="text" />
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="24dp"
-                        android:layout_marginEnd="16dp"
-                        android:drawablePadding="10dp"
-                        android:hint="@string/fbuserscorreo"
-                        android:minHeight="48dp"
-                        app:startIconDrawable="@drawable/ic_correo">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/etCorreo"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:inputType="textEmailAddress" />
-                    </com.google.android.material.textfield.TextInputLayout>
 
                     <Button
                         android:id="@+id/btnRegistrarse"

@@ -4,7 +4,6 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:allowBackup="true"
@@ -15,30 +14,26 @@
         android:theme="@style/Theme.TiposDeMentes"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".MisTest"
-            android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:name=".Juego6"
+            android:exported="false" />
         <activity
-            android:name=".Estadistica"
-            android:exported="true"
-            android:hardwareAccelerated="true"
-            android:screenOrientation="portrait"/>
+            android:name=".Juego5"
+            android:exported="false" />
         <activity
-            android:name=".AcercaDe"
-            android:exported="false"
-            android:screenOrientation="portrait" />
+            android:name=".Juego4"
+            android:exported="false" />
         <activity
-            android:name=".Results"
-            android:exported="false"
-            android:screenOrientation="portrait" />
+            android:name=".juego3"
+            android:exported="false" />
         <activity
-            android:name=".Perfil"
-            android:exported="false"
-            android:screenOrientation="portrait" />
+            android:name=".Juego2"
+            android:exported="false" />
         <activity
-            android:name=".Contacto"
-            android:exported="false"
-            android:screenOrientation="portrait" />
+            android:name=".Reciclador"
+            android:exported="false" />
+        <activity
+            android:name=".Juegos"
+            android:exported="false" />
         <activity
             android:name=".MenuPrincipal"
             android:exported="false"
@@ -48,10 +43,6 @@
             android:exported="false"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".Preguntas"
-            android:exported="false"
-            android:screenOrientation="portrait" />
         <activity
             android:name=".IntroSlider"
             android:exported="false"

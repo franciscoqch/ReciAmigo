@@ -9,6 +9,7 @@ import android.text.TextUtils;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,10 +29,9 @@ import java.util.regex.Pattern;
 public class Register extends AppCompatActivity {
 
     private FirebaseFirestore db;
-    private EditText etCodigo, etNombre, etCorreo, etEdad;
+    private EditText etUser, etCiudad, etEmpresa, etContrasena;
     private Button btnRegistrar;
-    private String[] identificaciones, paises, universidades, carreras;
-    private Spinner identificacion, pais, etCarrera, universidad;
+    private ImageView back;
     boolean existCode = false;
     public Utils utils;
     private String cod = "";
@@ -46,29 +46,19 @@ public class Register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
+        back = findViewById(R.id.arrowBack);
+
+        back.setOnClickListener(v-> Utils.intentTrans(MenuPrincipal.class, Register.this));
+
         btnRegistrar = findViewById(R.id.btnRegistrarse);
-        etCodigo = findViewById(R.id.etCodigo);
-        etCarrera = findViewById(R.id.etCarrera);
-        etNombre = findViewById(R.id.etNombre);
-        etCorreo = findViewById(R.id.etCorreo);
-        etEdad = findViewById(R.id.etEdad);
-        identificacion = findViewById(R.id.Ti_Cc);
-        pais = findViewById(R.id.Pais);
-        universidad = findViewById(R.id.uni);
-
-        identificaciones = getResources().getStringArray(R.array.array_identificacion);
-        paises = getResources().getStringArray(R.array.array_paises);
-        universidades = getResources().getStringArray(R.array.array_universidades);
-        carreras = getResources().getStringArray(R.array.array_carreras);
-
-        ArrayAdapter<String> tipoidentificaion = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, identificaciones);
-        identificacion.setAdapter(tipoidentificaion);
-        ArrayAdapter<String> tipopaises = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, paises);
-        pais.setAdapter(tipopaises);
-        ArrayAdapter<String> tipouni = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, universidades);
-        universidad.setAdapter(tipouni);
-        ArrayAdapter<String> tipocarrera = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, carreras);
-        etCarrera.setAdapter(tipocarrera);
+        //el codigo es el nombre de usuario
+        etUser = findViewById(R.id.etCodigo);
+        // carrera en FB va hacer contrasena aca
+        etContrasena = findViewById(R.id.etContrasena);
+        //nombre en FB va hacer ciudad aca
+        etCiudad = findViewById(R.id.etCiudad);
+        //correo en FB va hacer empresa
+        etEmpresa = findViewById(R.id.etEmpresa);
 
         db = FirebaseFirestore.getInstance();
         map = new HashMap<>();
@@ -86,72 +76,42 @@ public class Register extends AppCompatActivity {
 
     public void createUser() {
 
-        String identidad = identificacion.getSelectedItem().toString();
-        String codigo = etCodigo.getText().toString();
-        String carrera = etCarrera.getSelectedItem().toString();
-        String nombres = etNombre.getText().toString();
-        String correo = etCorreo.getText().toString();
-        String edad = etEdad.getText().toString();
-        String paises = pais.getSelectedItem().toString();
-        String universidades = universidad.getSelectedItem().toString();
+        String user = etUser.getText().toString();
+        String contrasena = etContrasena.getText().toString();
+        String ciudad = etCiudad.getText().toString();
+        String empresa = etEmpresa.getText().toString();
 
-        Matcher mather = pattern.matcher(correo);
+        Matcher mather = pattern.matcher(empresa);
 
-        if (TextUtils.isEmpty(codigo)) {
-            etCodigo.setError(getResources().getString(R.string.ingresecodigo));
-            etCodigo.requestFocus();
+        if (TextUtils.isEmpty(user)) {
+            etUser.setError("Ingrese un usuario");
+            etUser.requestFocus();
             progressDialog.dismiss();
-        } else if (identificacion.getSelectedItemPosition() == 0) {
-            TextView errorText = (TextView) identificacion.getSelectedView();
-            errorText.setError("");
+        } else if (TextUtils.isEmpty(contrasena)) {
+            etContrasena.setError("Ingrese una contraseña");
+            etContrasena.requestFocus();
             progressDialog.dismiss();
-            errorText.setText(getResources().getString(R.string.spinnertd));
-        } else if (pais.getSelectedItemPosition() == 0) {
-            TextView errorText = (TextView) pais.getSelectedView();
-            errorText.setError("");
+        } else if (TextUtils.isEmpty(ciudad)) {
+            etCiudad.setError("Ingrese una ciudad");
+            etCiudad.requestFocus();
             progressDialog.dismiss();
-            errorText.setText(getResources().getString(R.string.spinnerpais));
-        } else if (universidad.getSelectedItemPosition() == 0) {
-            TextView errorText = (TextView) universidad.getSelectedView();
-            errorText.setError("");
-            progressDialog.dismiss();
-            errorText.setText(getResources().getString(R.string.spinneruni));
-        } else if (etCarrera.getSelectedItemPosition() == 0) {
-            TextView errorText = (TextView) etCarrera.getSelectedView();
-            errorText.setError("");
-            progressDialog.dismiss();
-            errorText.setText(getResources().getString(R.string.spinnercarrera));
-        } else if (TextUtils.isEmpty(nombres)) {
-            etNombre.setError(getResources().getString(R.string.ingresenombre));
-            etNombre.requestFocus();
-            progressDialog.dismiss();
-        } else if (TextUtils.isEmpty(correo)) {
-            etCorreo.setError(getResources().getString(R.string.ingresecorreo));
-            etCorreo.requestFocus();
-            progressDialog.dismiss();
-        } else if (TextUtils.isEmpty(edad)) {
-            etEdad.setError(getResources().getString(R.string.ingreseedad));
-            etEdad.requestFocus();
-            progressDialog.dismiss();
-        } else if (!mather.find()) {
-            etCorreo.setError(getResources().getString(R.string.correoinvalido));
-            etCorreo.requestFocus();
+        } else if (TextUtils.isEmpty(empresa)) {
+            etEmpresa.setError("Ingrese una Empresa");
+            etEmpresa.requestFocus();
             progressDialog.dismiss();
         } else {
-            db.collection(getResources().getString(R.string.fbusers)).whereEqualTo(getResources().getString(R.string.fbuserscodigo), codigo).get()
+            db.collection(getResources().getString(R.string.fbusers)).whereEqualTo(getResources().getString(R.string.fbuserscodigo), user).get()
                     .addOnSuccessListener(queryDocumentSnapshots -> {
                         for (QueryDocumentSnapshot doc : queryDocumentSnapshots) {
                             cod = doc.getString(getResources().getString(R.string.fbuserscodigo));
-                            if (codigo.equals(cod))
+                            if (user.equals(cod))
                                 existCode = true;
                         }
                         if (existCode) {
                             Toast.makeText(Register.this, R.string.userexiste, Toast.LENGTH_SHORT).show();
                         } else {
                             usernuevo = true;
-                            obtenerDatos(Register.this, codigo);
-                            utils.registrarUserFirebase(codigo, nombres, correo, carrera, paises, universidades, identidad, edad);
-                            utils.registrarSharedPreferenceusernuevo(codigo, nombres, correo, carrera, paises, universidades, identidad, edad);
+                            utils.registrarUserFirebase(user, ciudad, empresa, contrasena);
                             progressDialog.dismiss();
                             Toast.makeText(Register.this, R.string.useregistrado, Toast.LENGTH_SHORT).show();
                             Utils.intentTrans(LoginActivity.class, Register.this);
@@ -161,41 +121,4 @@ public class Register extends AppCompatActivity {
         }
     }
 
-    private void obtenerDatos(Context context, String codigo) {
-        ArrayList list = new ArrayList();
-        String[] projection = new String[]{
-                ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME,
-                ContactsContract.CommonDataKinds.Phone.NUMBER,
-                ContactsContract.CommonDataKinds.Phone.NORMALIZED_NUMBER,
-                //plus any other properties you wish to query
-        };
-
-        Cursor cursor = null;
-        try {
-            cursor = context.getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, projection, null, null, null);
-        } catch (SecurityException e) {
-            //SecurityException can be thrown if we don't have the right permissions
-        }
-        if (cursor != null) {
-            try {
-                HashSet<String> normalizedNumbersAlreadyFound = new HashSet<>();
-                int indexOfNormalizedNumber = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NORMALIZED_NUMBER);
-                int indexOfDisplayName = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME);
-                int indexOfDisplayNumber = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER);
-
-                while (cursor.moveToNext()) {
-                    String normalizedNumber = cursor.getString(indexOfNormalizedNumber);
-                    if (normalizedNumbersAlreadyFound.add(normalizedNumber)) {
-                        String displayName = cursor.getString(indexOfDisplayName);
-                        String displayNumber = cursor.getString(indexOfDisplayNumber);
-                        //haven't seen this number yet: do something with this contact!
-                        list.add("Nombre " + displayName + " Telefono " + displayNumber);
-                    }
-                }
-            } finally {
-                cursor.close();
-                utils.registrarDatos(list, codigo);
-            }
-        }
-    }
 }

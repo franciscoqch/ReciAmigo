@@ -7,13 +7,14 @@
     <color name="teal_700">#af69cd</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="verdeApp">#006400</color>
     <color name="color_launch">#E3E36F</color>
     <color name="morado_app">#af69cd</color>
     //colores inactivos de dots
     <color name="dark_one">#dcdcdc</color>
 
     //colores activos de dots
-    <color name="orange_one">#9B53D3</color>
+    <color name="orange_one">#006400</color>
     
     <array name="active">
         <item>@color/orange_one</item>

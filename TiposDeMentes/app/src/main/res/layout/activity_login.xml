@@ -4,33 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo_para_login"
     tools:context=".LoginActivity">
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/animacion_login"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
-        android:layout_height="195dp"
-        android:layout_marginTop="36dp"
+        android:layout_height="150dp"
+        android:background="@drawable/background_top"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="false"
-        app:lottie_rawRes="@raw/nuevohome" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/arrowBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Iniciar Sesion"
+            android:textColor="#ffffff"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/tierra" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="36dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="cursive"
         android:text="@string/nombreapp"
-        android:textColor="@color/white"
+        android:textColor="@color/verdeApp"
         android:textSize="38sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/layout_"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -40,7 +73,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="90dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -50,7 +84,7 @@
             android:layout_marginTop="22dp"
             android:layout_marginEnd="32dp"
             android:drawablePadding="10dp"
-            android:hint="@string/numdocumento"
+            android:hint="Nombre de Usuario"
             android:minHeight="48dp"
             app:hintTextColor="#000000"
             app:layout_constraintTop_toBottomOf="@+id/userameLogin"
@@ -62,7 +96,31 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/editext_login"
-                android:inputType="number|textPassword"
+                android:inputType="text"
+                android:maxLength="10" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="32dp"
+            android:drawablePadding="10dp"
+            android:hint="Contraseña"
+            android:minHeight="48dp"
+            app:hintTextColor="#000000"
+            app:layout_constraintTop_toBottomOf="@+id/userameLogin"
+            app:passwordToggleEnabled="true"
+            app:startIconDrawable="@drawable/ic_seguridad">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/contrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_login"
+                android:inputType="textPassword"
                 android:maxLength="10" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -90,7 +148,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/nocuenta"
-                android:textColor="@color/white"
+                android:textColor="@color/verdeApp"
                 android:textSize="17sp" />
 
             <TextView
@@ -99,7 +157,7 @@
                 android:layout_height="wrap_content"
                 android:paddingStart="5dp"
                 android:text="@string/register"
-                android:textColor="@color/white"
+                android:textColor="@color/verdeApp"
                 android:textSize="19sp"
                 android:textStyle="bold" />
 

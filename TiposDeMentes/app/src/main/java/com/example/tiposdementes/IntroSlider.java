@@ -1,6 +1,5 @@
 package com.example.tiposdementes;
 
-import static com.example.tiposdementes.MenuPrincipal.informacionstatus;
 
 import android.Manifest;
 import android.app.ProgressDialog;
@@ -51,9 +50,8 @@ public class IntroSlider extends AppCompatActivity {
         wvInformacion = findViewById(R.id.webvviewInformacion);
         utils = new Utils(IntroSlider.this);
         utils.registrarValidador();
-        download();
 
-        if (informacionstatus) {
+        if (false) {
             progressDialog = new ProgressDialog(IntroSlider.this);
             progressDialog.show();
             progressDialog.setContentView(R.layout.progress_dialog);
@@ -177,18 +175,10 @@ public class IntroSlider extends AppCompatActivity {
     }
 
     private void launchLoginScreen() {
-        Utils.intentTrans(LoginActivity.class, IntroSlider.this);
+        Utils.intentTrans(MenuPrincipal.class, IntroSlider.this);
         finish();
     }
 
-    //permision
-    public void download() {
-        if (isDownloadManagerAvailable()) {
-            checkSelfPermission();
-        } else {
-            Toast.makeText(this, getResources().getString(R.string.permisos), Toast.LENGTH_LONG).show();
-        }
-    }
 
     private static boolean isDownloadManagerAvailable() {
         return Build.VERSION.SDK_INT >= Build.VERSION_CODES.GINGERBREAD;
