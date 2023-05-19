@@ -120,7 +120,7 @@
                             android:drawablePadding="10dp"
                             android:hint="Nombre de usuario"
                             android:minHeight="48dp"
-                            app:startIconDrawable="@drawable/ic_seguridad">
+                            app:startIconDrawable="@drawable/ic_nombre">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:id="@+id/etCodigo"
@@ -176,7 +176,7 @@
                             android:drawablePadding="10dp"
                             android:hint="Ciudad donde Recicla"
                             android:minHeight="48dp"
-                            app:startIconDrawable="@drawable/ic_seguridad">
+                            app:startIconDrawable="@drawable/ic_carrera">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:id="@+id/etCiudad"
@@ -204,7 +204,7 @@
                             android:drawablePadding="10dp"
                             android:hint="Empresa Asociado"
                             android:minHeight="48dp"
-                            app:startIconDrawable="@drawable/ic_seguridad">
+                            app:startIconDrawable="@drawable/ic_carrera">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:id="@+id/etEmpresa"

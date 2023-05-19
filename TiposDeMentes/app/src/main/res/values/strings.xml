@@ -75,7 +75,7 @@
     <string name="fbusersfecha">Fecha</string>
     <string name="fbuserestado">Estado</string>
     <!-- Splash -->
-    <string name="nombreapp">Trifásico</string>
+    <string name="nombreapp">ReciAmigo</string>
     <!-- Login -->
     <string name="login">login</string>
     <string name="nocuenta">Si no tienes una cuenta</string>
@@ -108,12 +108,12 @@
     <!-- Introslider -->
     <string name="itsiguiente">Siguiente</string>
     <string name="urlinformacion">https://wordwall.net/es/resource/34154364/reciclar</string>
-    <string name="intro1titulo">TITULO 1</string>
-    <string name="intro1descripcion">Waldemar de Gregory, diseñó y validó el RCMT, como una prueba para diagnosticar las manifestaciones del cerebro triuno, frente al entorno familiar, social. Institucional, laboral y ecológico.</string>
-    <string name="intro2titulo">TITULO 2</string>
-    <string name="intro2descripcion">Para realizar o responder a las preguntas que aparecerán en pantalla debe colocar o seleccionar 1,2,3,4,5 siendo 1 que está en desacuerdo con la preguntada, 2 que está algo en desacuerdo, 3 que no está de acuerdo ni en desacuerdo, 4 que está algo de acuerdo, 5 está completamente de acuerdo.</string>
-    <string name="intro3titulo">TITULO 3.</string>
-    <string name="intro3descripcion">Esta aplicación usted podrá saber el tipo de mente que posee, pero si quiere ayudar a llevar un registro del tipo de mente que predomina actualmente, por favor regístrese a continución, en caso de que no desee no habrá ningún problema podrá realizar el test normalmente.</string>
+    <string name="intro1titulo">ReciAmigo</string>
+    <string name="intro1descripcion">Únete a la diversión, recicla con pasión. Juegos y ecología, una combinación de alegría. Cuida el planeta mientras te diviertes, nuestra app es lo que necesitas.</string>
+    <string name="intro2titulo">Reciclá</string>
+    <string name="intro2descripcion">"Transforma el mundo. Juntos, por un futuro sostenible."</string>
+    <string name="intro3titulo">Ambiente.</string>
+    <string name="intro3descripcion">Cuidar el medio ambiente: Nuestra responsabilidad, un legado para las generaciones futuras.</string>
     <!-- Preguntas xml -->
     <string name="titulopreguntas">Sección de preguntas</string>
     <string name="cardpreguntas">Pregunta 1/27</string>
@@ -126,7 +126,7 @@
     <!-- Result adapatador -->
     <string name="descripcioncirculo">Cerebro Derecho Dominante (D):Persona sensible, afectuosa, creativa y soñadora</string>
     <string name="descripcioncuadrado">Cerebro Izquierdo Dominante (I):Persona pensadora e intelectual</string>
-    <string name="descripciontriangulo">Cerebro Central Dominante (C):Persona práctica, organizada, con éxito en el trabajo, en los negocios; es líder en acción.</string>
+    <string name="descripciontriangulo">"Únete a la diversión, recicla con pasión. Juegos y ecología, una combinación de alegría. Cuida el planeta mientras te diviertes, nuestra app es lo que necesitas.".</string>
     <string name="tecnicacirculo">Operativo - Instintivo - tu fuerte es la parte derecha del cerebro.</string>
     <string name="tecnicacuadrado">Logíco - Matemático - tu fuerte es la parte izquierda del cerebro.</string>
     <string name="tecnicatriangulo">Emotivo - Creativo - tu fuerte es la parte central del cerebro.</string>

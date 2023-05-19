@@ -24,7 +24,7 @@ public class MenuPrincipal extends AppCompatActivity {
         scroll2 = findViewById(R.id.includeHomeSecond);
 
         binding.includeHomefirst.card1.setOnClickListener(v -> {
-
+            Utils.intentTrans(aprender.class, MenuPrincipal.this);
         });
 
         binding.includeHomefirst.card2.setOnClickListener(v -> {

@@ -32,9 +32,9 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="80dp"
             android:fontFamily="sans-serif-black"
-            android:text="Nombre de App"
+            android:text="@string/nombreapp"
             android:textColor="#ffffff"
-            android:textSize="28sp"
+            android:textSize="30sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -57,7 +57,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="8dp"
             android:fontFamily="casual"
-            android:text="your Subtitle..."
+            android:text="Tu app para reciclar"
             android:textColor="#ffffff"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
