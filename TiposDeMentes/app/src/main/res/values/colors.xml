@@ -12,7 +12,9 @@
     <color name="morado_app">#af69cd</color>
     //colores inactivos de dots
     <color name="dark_one">#dcdcdc</color>
-
+    //colores del bot
+    <color name="color_bot_green">#6F9548</color>
+    <color name="color_bot_green_dark">#276C38</color>
     //colores activos de dots
     <color name="orange_one">#006400</color>
     

@@ -12,13 +12,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TiposDeMentes"
-
         android:usesCleartextTraffic="true">
-
         <activity
-            android:name=".aprender">
-        </activity>
+            android:name=".ChatBot"
+            android:exported="false" />
 
+        <activity android:name=".aprender"></activity>
         <activity
             android:name=".Juego6"
             android:exported="false" />
